@@ -48,13 +48,13 @@ Metacritic scraper to generate review datasets for games, movies, music, and tv
 
 ### Parameters ###
 *Required*
-
 1.	Number of pages deep to parse off of the score browser (page 0 is the highest scores)
 2.	Name of the output file
 
 *Optional [case sensitive]*
-
 3.	Media type
+
 	valid options: movies, games, music, tv
 4.	Sub-Media type (only applies when 'games' are specified) 
-	valid options: ps3, xbox360, wii, pc, psp, ds, ps2
+
+        valid options: ps3, xbox360, wii, pc, psp, ds, ps2
