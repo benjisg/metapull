@@ -1,0 +1,13 @@
+Metacritic scraper to generate review datasets for games, movies, music, and tv
+
+Dependencies:
+	PHP CLI
+	Bash
+	
+Options:
+	REQUIRED:
+		1) Number of pages deep to parse off of the score browser (page 0 is the highest scores)
+		2) Name of the output file
+	OPTIONAL:
+		3) Media type [case sensitive]; movies, games, music, tv
+		4) Sub-Media type (only applies when 'games' are specified) [case sensitive]; ps3, xbox360, wii, pc, psp, ds, ps2
