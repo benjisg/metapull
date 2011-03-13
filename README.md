@@ -77,14 +77,32 @@ User Score: 9.0
 		./pull.sh 5 movies.txt movies
 
 ### Parameters ###
-*Required*
-1.	Number of pages deep to parse off of the score browser (page 0 is the highest scores)
-2.	Name of the output file
+<p>
+	<em>Required</em>
+	<br />
+	1.    Number of pages deep to parse off of the score browser (page 0 is the highest scores)
+	<br />
+	2.    Name of the output file
+</p>
 
-*Optional [case sensitive]*
-3.	Media type
+<p>
+	<em>Optional [case sensitive]</em>
+	<br />
+	3.    Media type
+</p>
 
+<pre>
+	<code>
 		valid options: movies, games, music, tv
-4.	Sub-Media type (only applies when 'games' are specified) 
+	</code>
+</pre>
 
+<p>
+	4.    Sub-Media type (only applies when 'games' are specified) 
+</p>
+
+<pre>
+	<code>
 		valid options: ps3, xbox360, wii, pc, psp, ds, ps2
+	</code>
+</pre>
