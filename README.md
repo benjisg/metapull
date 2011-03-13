@@ -9,33 +9,63 @@ Metacritic scraper to generate review datasets for games, movies, music, and tv
 ## Sample data set: ##
 *xbox 360 reviews*
 
-> Grand Theft Auto IV
-> Metascore: 98 
-> Release Date: Apr 29, 2008 
-> Rating: M 
-> Publisher: Rockstar Games 
-> User Score: 8.0
+<blockquote>
+<p>
+Grand Theft Auto IV
+<br />
+Metascore: 98 
+<br />
+Release Date: Apr 29, 2008 
+<br />
+Rating: M 
+<br />
+Publisher: Rockstar Games 
+<br />
+User Score: 8.0
+</p>
 
-> BioShock 
-> Metascore: 96 
-> Release Date: Aug 21, 2007 
-> Rating: M 
-> Publisher: 2K Games 
-> User Score: 8.7
-
-> The Orange Box 
-> Metascore: 96 
-> Release Date: Oct 10, 2007 
-> Rating: M 
-> Publisher: EA Games 
-> User Score: 9.0
-
-> Mass Effect 2 
-> Metascore: 96 
-> Release Date: Jan 26, 2010 
-> Rating: M 
-> Publisher: Electronic Arts 
-> User Score: 9.0
+<p>
+BioShock 
+<br />
+Metascore: 96 
+<br />
+Release Date: Aug 21, 2007 
+<br />
+Rating: M 
+<br />
+Publisher: 2K Games 
+<br />
+User Score: 8.7
+</p>
+ 
+<p>
+The Orange Box 
+<br />
+Metascore: 96 
+<br />
+Release Date: Oct 10, 2007 
+<br />
+Rating: M 
+<br />
+Publisher: EA Games 
+<br />
+User Score: 9.0
+</p>
+ 
+<p>
+Mass Effect 2 
+<br />
+Metascore: 96 
+<br />
+Release Date: Jan 26, 2010 
+<br />
+Rating: M 
+<br />
+Publisher: Electronic Arts 
+<br />
+User Score: 9.0
+</p>
+</blockquote>
 
 ### Simple Run Examples: ###
 *	Pull first 10 pages of Xbox 360 reviews
