@@ -84,7 +84,7 @@ User Score: 9.0
 *Optional [case sensitive]*
 3.	Media type
 
-	valid options: movies, games, music, tv
+		valid options: movies, games, music, tv
 4.	Sub-Media type (only applies when 'games' are specified) 
 
-        valid options: ps3, xbox360, wii, pc, psp, ds, ps2
+		valid options: ps3, xbox360, wii, pc, psp, ds, ps2
