@@ -10,7 +10,7 @@ OUTPUT_FILE_NAME=$2;
 
 # Optional parameters; defaults to pulling xbox360 reviews
 MEDIA_TYPE=${3:-games};
-if [ $MEDIA_TYPE = "games" ]; then
+if [ "$MEDIA_TYPE" = "games" ]; then
 	SUBMEDIA_TYPE="all/"${4:-xbox360};
 else
 	SUBMEDIA_TYPE="all";
@@ -37,7 +37,7 @@ if [ $OUTPUT_FILE_NAME != "" ] && [ $NUMBER_OF_PAGES -gt 0 ]; then
 	for (( i = 0; i < $NUMBER_OF_PAGES; i++ ))
 	do
 		echo "Processing page "${i}
-		curl -s "http://www.metacritic.com/browse/"$MEDIA_TYPE"/score/metascore/all/"$SUBMEDIA_TYPE"?view=detailed&page="${i} -o $TEMP_FOLDER/page${i}.txt
+		curl -s "http://www.metacritic.com/browse/"$MEDIA_TYPE"/score/metascore/"$SUBMEDIA_TYPE"?view=detailed&page="${i} -o $TEMP_FOLDER/page${i}.txt
 		php lib/clean.php $TEMP_FOLDER/page${i}.txt $DATA_DIRECTORY/$OUTPUT_FILE_NAME
 	done
 	echo "Cleaning temp folder"
