@@ -2,8 +2,11 @@
 #
 # Script to pull and generate datasets from metacritic for use
 # Author: Benji Schwartz-Gilbert
-#
+# 03/13/2011
 # 
+# Input:
+#		# of pages starting from highest score to parse backwards
+#		The name of the file to write parsed content to
 
 NUMBER_OF_PAGES=$1;
 OUTPUT_FILE_NAME=$2;
@@ -12,6 +15,9 @@ OUTPUT_FILE_NAME=$2;
 MEDIA_TYPE=${3:-games};
 if [ "$MEDIA_TYPE" = "games" ]; then
 	SUBMEDIA_TYPE="all/"${4:-xbox360};
+elif [ "$MEDIA_TYPE" = "music" ]; then
+	MEDIA_TYPE="albums";
+	SUBMEDIA_TYPE="all";
 else
 	SUBMEDIA_TYPE="all";
 fi
@@ -38,7 +44,7 @@ if [ $OUTPUT_FILE_NAME != "" ] && [ $NUMBER_OF_PAGES -gt 0 ]; then
 	do
 		echo "Processing page "${i}
 		curl -s "http://www.metacritic.com/browse/"$MEDIA_TYPE"/score/metascore/"$SUBMEDIA_TYPE"?view=detailed&page="${i} -o $TEMP_FOLDER/page${i}.txt
-		php lib/clean.php $TEMP_FOLDER/page${i}.txt $DATA_DIRECTORY/$OUTPUT_FILE_NAME
+		php lib/clean.php $TEMP_FOLDER/page${i}.txt $DATA_DIRECTORY/$OUTPUT_FILE_NAME $MEDIA_TYPE
 	done
 	echo "Cleaning temp folder"
 	rm $TEMP_FOLDER/*

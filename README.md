@@ -6,6 +6,14 @@ Metacritic scraper to generate review datasets for games, movies, music, and tv
 *	PHP CLI
 *	Bash
 
+<b>Notes:</b>
+<br/>
+<ul>
+	<li>Specifying a filename for a file that already exists will cause the original to be deleted</li>
+	<li>All page results will be appended to the same file</li>
+	<li>I claim no ownership of, or responsibility for, the data harvested and/or how it is used</li>
+</ul>
+
 ## Sample data set: ##
 *xbox 360 reviews*
 
@@ -92,9 +100,7 @@ User Score: 9.0
 </p>
 
 <pre>
-	<code>
-		valid options: movies, games, music, tv
-	</code>
+	<code>valid options: movies, games, music, tv</code>
 </pre>
 
 <p>
@@ -102,7 +108,5 @@ User Score: 9.0
 </p>
 
 <pre>
-	<code>
-		valid options: ps3, xbox360, wii, pc, psp, ds, ps2
-	</code>
+	<code>valid options: ps3, xbox360, wii, pc, psp, ds, ps2</code>
 </pre>
