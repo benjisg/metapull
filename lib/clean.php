@@ -67,7 +67,7 @@
 											"/Rated/",
 											"/Starring/",
 											"/Genre\(s\)/",
-											"/User\sScore\/",
+											"/User\sScore/",
 											"/Runtime/"
 										),
 										Array(
