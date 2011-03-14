@@ -7,7 +7,6 @@ Metacritic scraper to generate review datasets for games, movies, music, and tv
 *	Bash
 
 <b>Notes:</b>
-<br/>
 <ul>
 	<li>Specifying a filename for a file that already exists will cause the original to be deleted</li>
 	<li>All page results will be appended to the same file</li>
@@ -79,6 +78,10 @@ User Score: 9.0
 *	Pull first 10 pages of Xbox 360 reviews
 
 		./pull.sh 10 xbox360_reviews.txt
+		
+*	Pull first page of PC reviews
+
+		./pull.sh 1 pc_reviews.txt games pc
 
 *	Pull first 5 pages of Movie reviews
 
