@@ -18,7 +18,7 @@ Metacritic scraper to generate review datasets for games, movies, music, and tv
 
 <blockquote>
 <p>
-Grand Theft Auto IV
+Title: Grand Theft Auto IV
 <br />
 Metascore: 98 
 <br />
@@ -32,7 +32,7 @@ User Score: 8.0
 </p>
 
 <p>
-BioShock 
+Title: BioShock 
 <br />
 Metascore: 96 
 <br />
@@ -46,7 +46,7 @@ User Score: 8.7
 </p>
  
 <p>
-The Orange Box 
+Title: The Orange Box 
 <br />
 Metascore: 96 
 <br />
@@ -60,7 +60,7 @@ User Score: 9.0
 </p>
  
 <p>
-Mass Effect 2 
+Title: Mass Effect 2 
 <br />
 Metascore: 96 
 <br />
