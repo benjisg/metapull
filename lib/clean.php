@@ -45,17 +45,17 @@
 									$stripped_text = preg_replace(
 										Array(
 											"/Metascore/",
-											"/Release\sDate/",
-											"/Rating/",
-											"/Publisher/",
-											"/User\sScore/"
+											"/Release\sDate\:/",
+											"/Rating\:/",
+											"/Publisher\:/",
+											"/User\sScore\:/"
 										),
 										Array(
-											"\nMetascore",
-											"\nRelease Date",
-											"\nRating",
-											"\nPublisher",
-											"\nUser Score"
+											"\nMetascore:",
+											"\nRelease Date:",
+											"\nRating:",
+											"\nPublisher:",
+											"\nUser Score:"
 										),
 										$stripped_text);
 									break;
@@ -63,21 +63,21 @@
 									$stripped_text = preg_replace(
 										Array(
 											"/Metascore/",
-											"/Release\sDate/",
-											"/Rated/",
-											"/Starring/",
-											"/Genre\(s\)/",
-											"/User\sScore/",
-											"/Runtime/"
+											"/Release\sDate\:/",
+											"/Rated\:/",
+											"/Starring\:/",
+											"/Genre\(s\)\:/",
+											"/User\sScore\:/",
+											"/Runtime\:/"
 										),
 										Array(
 											"\nMetascore",
-											"\nRelease Date",
-											"\nRated",
-											"\nStarring",
-											"\nGenre(s)",
-											"\nUser Score",
-											"\nRuntime"
+											"\nRelease Date:",
+											"\nRated:",
+											"\nStarring:",
+											"\nGenre(s):",
+											"\nUser Score:",
+											"\nRuntime:"
 										),
 										$stripped_text);
 									break;
@@ -85,17 +85,17 @@
 									$stripped_text = preg_replace(
 										Array(
 											"/Metascore/",
-											"/Start\sdate/",
-											"/Starring/",
-											"/Genre\(s\)/",
-											"/User\sScore/"
+											"/Start\sdate\:/",
+											"/Starring\:/",
+											"/Genre\(s\)\:/",
+											"/User\sScore\:/"
 										),
 										Array(
 											"\nMetascore",
-											"\nRelease Date",
-											"\nStarring",
-											"\nGenre(s)",
-											"\nUser Score"
+											"\nRelease Date:",
+											"\nStarring:",
+											"\nGenre(s):",
+											"\nUser Score:"
 										),
 										$stripped_text);
 									break;
@@ -103,17 +103,17 @@
 									$stripped_text = preg_replace(
 										Array(
 											"/Metascore/",
-											"/Release\sDate/",
-											"/Rating/",
-											"/Genre\(s\)/",
-											"/User\sScore/"
+											"/Release\sDate\:/",
+											"/Rating\:/",
+											"/Genre\(s\)\:/",
+											"/User\sScore\:/"
 										),
 										Array(
 											"\nMetascore",
-											"\nRelease Date",
-											"\nRating",
-											"\nGenre(s)",
-											"\nUser Score"
+											"\nRelease Date:",
+											"\nRating:",
+											"\nGenre(s):",
+											"\nUser Score:"
 										),
 										$stripped_text);
 									break;
