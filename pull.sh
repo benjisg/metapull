@@ -1,11 +1,11 @@
 #!/bin/bash
 #
-# Script to pull and generate datasets from metacritic for use
+# Script to pull and generate review datasets from metacritic for use
 # Author: Benji Schwartz-Gilbert
 # 03/13/2011
 # 
 # Input:
-#		# of pages starting from highest score to parse backwards
+#		Number of pages starting from highest score to parse
 #		The name of the file to write parsed content to
 
 NUMBER_OF_PAGES=$1;
@@ -25,7 +25,7 @@ fi
 DATA_DIRECTORY="data";
 TEMP_FOLDER="temp";
 
-if [ $OUTPUT_FILE_NAME != "" ] && [ $NUMBER_OF_PAGES -gt 0 ]; then
+if [ "$OUTPUT_FILE_NAME" != "" ] && [ $NUMBER_OF_PAGES -gt 0 ]; then
 	if [ ! -d $DATA_DIRECTORY ]; then
 		mkdir $DATA_DIRECTORY
 	else
@@ -51,6 +51,18 @@ if [ $OUTPUT_FILE_NAME != "" ] && [ $NUMBER_OF_PAGES -gt 0 ]; then
 	echo "Finished"
 else
 	echo
-	echo "Invalid parameters passed in, number of pages and output file should both be specified"
+	echo "Usage: ./pull.sh [Number of Pages] [Output File Name] {Major Media Type} {Minor Media Type}"
+	echo
+	echo "Required:"
+	echo "  [Number of Pages] -- The number of pages to pull starting from page 1 (highest ranked titles)"
+	echo "  [Output File Name] -- The name of the output file to write results to"
+	echo "     1) Will be placed in the data directory"
+	echo "     2) Removes the file if it exists"
+	echo
+	echo "Optional:"
+	echo "  {Major Media Type} -- The type of titles to pull"
+	echo "    Valid types: games (default), movies, music, tv"
+	echo "  {Minor Media Type} -- The minor media type to pull down (only applies to games); "
+	echo "    Valid types: xbox360 (default), ps3, wii, psp, ds, 3ds, pc, ps2, ios, all (all platforms)" 
 	echo 
 fi
